@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insurance Regulatory Dashboard</title>
+</head>
+<body>
+    {% if session['user'] %}
+        <p>Welcome, {{ session['user']['name'] }} | <a href="/logout">Logout</a></p>
+        <h1>Insurance Regulatory Dashboard</h1>
+        <nav>
+            <a href="/sdr/solvency">Solvency</a>
+            <a href="/sdr/balance_sheet">Balance Sheet</a>
+            <a href="/sdr/income_statement">Income Statement</a>
+            <a href="/sdr/premiums_claims">Premiums & Claims</a>
+            <a href="/sdr/reinsurance">Reinsurance</a>
+            <a href="/sdr/receivables_payables">Receivables & Payables</a>
+            <a href="/sdr/investments">Investments</a>
+            <a href="/sdr/policy_data">Policy Data</a>
+            <a href="/sdr/governance">Governance</a>
+        </nav>
+    {% else %}
+        <p>You must be <a href="/login">logged in</a> to view this page.</p>
+    {% endif %}
+</body>
+</html>

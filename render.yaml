@@ -1,0 +1,12 @@
+ from flask import render_template_string
+
+return render_template_string("""
+    <h2>Welcome to LIBERIA INSURANCE REGULATORY COMMISSION (LIRC)</h2>
+    <p>LIRC Portal is an online application that manages all of your formal communications with your regulator.</p>
+    <form method="POST" action="/login">
+        Username: <input name="username"><br>
+        Password: <input name="password" type="password"><br>
+        <button type="submit">Login</button>
+    </form>
+    <p><a href="/register">Register</a> | <a href="/resend">Resend Confirmation</a></p>
+""")

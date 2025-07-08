@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to LIRC Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 700px;
+            margin: 50px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #003366;
+        }
+        .login-form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .login-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #003366;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .login-button:hover {
+            background: #0055a5;
+        }
+        .note {
+            margin-top: 30px;
+            font-size: 0.95em;
+            color: #333;
+        }
+        .forgot-password {
+            margin-top: 10px;
+            display: inline-block;
+            color: #0055a5;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to LIBERIA INSURANCE REGULATORY COMMISSION (LIRC)</h1>
+        <p>
+            LIRC Portal is an online application that manages all of your formal communications with your regulator.
+            Using the LIRC Portal, you will be able to complete and submit all required returns online. In addition,
+            you will be able to see your company’s profile – the current information held by the regulator about your
+            company – and keep it up to date.
+        </p>
+        <p>To access the LIRC Portal, please enter your username and password below (password is case sensitive):</p>
+
+        <form class="login-form" method="POST" action="/login">
+            <label for="username">Username: *</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password: *</label>
+            <input type="password" id="password" name="password" required>
+
+            <button class="login-button" type="submit">Login</button>
+        </form>
+
+        <div class="forgot-password">Forgotten Password</div>
+
+        <div class="note">
+            <h3>System Requirements</h3>
+            <ul>
+                <li>Microsoft Internet Explorer 7+, Firefox 4+, or Google Chrome 10+</li>
+                <li>Adobe Acrobat Reader 8.0+ for viewing and printing PDF forms</li>
+                <li>Microsoft Excel 2003+ for spreadsheet exports</li>
+                <li>A printer connection for hard copies</li>
+                <li>Recommended screen resolution: 1024x768 or higher</li>
+            </ul>
+        </div>
+    </div>
+</body> 
+
+</html>
